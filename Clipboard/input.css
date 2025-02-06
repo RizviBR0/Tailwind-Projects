@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl;
+  }
+
+  h5 {
+    @apply mb-2 text-2xl font-bold text-darkGrayishBlue;
+  }
+
+  ::-webkit-scrollbar {
+    @apply hidden;
+  }
+}
+
+.section-container {
+  @apply max-w-6xl mx-auto text-center px-10;
+}
+
+.section-content {
+  @apply max-w-3xl mx-auto text-xl leading-9 text-center text-grayishBlue;
+}
+
+.button-container {
+  @apply flex flex-col md:flex-row justify-center w-full space-y-6 text-xl text-white md:space-y-0 md:space-x-4;
+}
+
+.link {
+  @apply hover:text-lightBlue hover:underline duration-200;
+}
+
+.btn {
+  @apply p-4 px-8 rounded-full shadow-lg duration-200 hover:opacity-80 cursor-pointer;
+}
+
+#hero {
+  background-image: url("https://images.unsplash.com/photo-1730882884953-378e5349a0a8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 576px) {
+  #hero {
+    background-size: cover;
+    background-position: center;
+    background-position: 100% 150%;
+  }
+}

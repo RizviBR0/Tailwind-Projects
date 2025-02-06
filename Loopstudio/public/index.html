@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <title>Simple Tailwind</title>
+</head>
+
+<body>
+    <!-- hero section -->
+    <section id="hero">
+        <div class="container max-w-6xl mx-auto px-6 py-12">
+            <nav class="flex items-center justify-between font-bold text-white">
+                <!-- logo -->
+                <div class="font-alata text-white font-extrabold text-3xl mb-4">loopstudios</div>
+
+                <!-- menu -->
+                <div class="hidden h-10 font-alata md:flex md:space-x-8">
+                    <!-- item 1 -->
+                    <div class="group">
+                        <a href="">About</a>
+                        <div class="mx-2 group-hover:border-b-2 group-hover:border-blue-50"></div>
+                    </div>
+
+                    <!-- item 2 -->
+                    <div class="group">
+                        <a href="">Carees</a>
+                        <div class="mx-2 group-hover:border-b-2 group-hover:border-blue-50"></div>
+                    </div>
+
+                    <!-- item 3 -->
+                    <div class="group">
+                        <a href="">Events</a>
+                        <div class="mx-2 group-hover:border-b-2 group-hover:border-blue-50"></div>
+                    </div>
+
+                    <!-- item 4 -->
+                    <div class="group">
+                        <a href="">Products</a>
+                        <div class="mx-2 group-hover:border-b-2 group-hover:border-blue-50"></div>
+                    </div>
+
+                    <!-- item 5 -->
+                    <div class="group">
+                        <a href="">Support</a>
+                        <div class="mx-2 group-hover:border-b-2 group-hover:border-blue-50"></div>
+                    </div>
+                </div>
+
+                <!-- hamburger button -->
+                <div class="md:hidden">
+                    <button id="ham-btn" type="button" class="z-40 block ham md:hidden focus:outline-none">
+                        <span class="ham-t"></span>
+                        <span class="ham-md"></span>
+                        <span class="ham-b"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- mobile menu -->
+            <div id="menu"
+                class="fixed hidden flex-col top-0 bottom-0 left-0 self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black z-30">
+                <a href="" class="hover:text-pink-500">About</a>
+                <a href="" class="hover:text-pink-500">Carees</a>
+                <a href="" class="hover:text-pink-500">Events</a>
+                <a href="" class="hover:text-pink-500">Products</a>
+                <a href="" class="hover:text-pink-500">Support</a>
+            </div>
+
+            <div class="max-w-lg mt-32 p-4 font-sans text-4xl text-white border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl">
+                Immersive experiences that deliver
+            </div>
+        </div>
+    </section>
+
+    <!-- feature section -->
+    <section id="feature">
+        <div class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0">
+            <!-- image -->
+            <img src="https://images.unsplash.com/photo-1612066473428-fb6833a0d855?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="">
+
+            <!-- text container -->
+            <div class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20 text-center">
+                <h2
+                    class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left mx-auto md:mx-0">
+                    The leader in interactive VR
+                </h2>
+
+                <p class="max-w-md text-center text-gray-700 md:text-left mx-auto md:mx-0">
+                    Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the
+                    best companies around the globe. Our award-winning creations have transformed businesses through
+                    digital experiences that bind to their brand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- creation section -->
+    <section id="creation">
+        <!-- creation container -->
+        <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+            <!-- creation header -->
+            <div class="flex justify-center mb-20 md:justify-between">
+                <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">Our creation</h2>
+
+                <button class="hidden btn md:block">
+                    See all
+                </button>
+            </div>
+
+            <!-- items container 1 -->
+            <div class="item-container flex">
+                <!-- item 1 -->
+                <div class="group item">
+                    <!-- image -->
+                    <img class="item-img"
+                        src="https://images.unsplash.com/photo-1612066463502-b9a10778c78d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+
+                    <!-- item gradient -->
+                    <div class="item-gradient"></div>
+
+                    <!-- item text -->
+                    <h5>Deep Earth</h5>
+                </div>
+
+                <!-- item 2 -->
+                <div class="group item">
+                    <!-- image -->
+                    <img class="item-img"
+                        src="https://images.unsplash.com/photo-1612066463502-b9a10778c78d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+
+                    <!-- item gradient -->
+                    <div class="item-gradient"></div>
+
+                    <!-- item text -->
+                    <h5>Deep Earth</h5>
+                </div>
+
+                <!-- item 3 -->
+                <div class="group item">
+                    <!-- image -->
+                    <img class="item-img"
+                        src="https://images.unsplash.com/photo-1612066463502-b9a10778c78d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+
+                    <!-- item gradient -->
+                    <div class="item-gradient"></div>
+
+                    <!-- item text -->
+                    <h5>Deep Earth</h5>
+                </div>
+
+                <!-- item 4 -->
+                <div class="group item">
+                    <!-- image -->
+                    <img class="item-img"
+                        src="https://images.unsplash.com/photo-1612066463502-b9a10778c78d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+
+                    <!-- item gradient -->
+                    <div class="item-gradient"></div>
+
+                    <!-- item text -->
+                    <h5>Deep Earth</h5>
+                </div>
+            </div>
+
+            <!-- item container 2 -->
+            <div class="item-container mt-6 hidden md:flex">
+                <!-- item 1 -->
+                <div class="group item">
+                    <!-- image -->
+                    <img class="item-img"
+                        src="https://images.unsplash.com/photo-1612066463502-b9a10778c78d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+
+                    <!-- item gradient -->
+                    <div class="item-gradient"></div>
+
+                    <!-- item text -->
+                    <h5>Deep Earth</h5>
+                </div>
+
+                <!-- item 2 -->
+                <div class="group item">
+                    <!-- image -->
+                    <img class="item-img"
+                        src="https://images.unsplash.com/photo-1612066463502-b9a10778c78d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+
+                    <!-- item gradient -->
+                    <div class="item-gradient"></div>
+
+                    <!-- item text -->
+                    <h5>Deep Earth</h5>
+                </div>
+
+                <!-- item 3 -->
+                <div class="group item">
+                    <!-- image -->
+                    <img class="item-img"
+                        src="https://images.unsplash.com/photo-1612066463502-b9a10778c78d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+
+                    <!-- item gradient -->
+                    <div class="item-gradient"></div>
+
+                    <!-- item text -->
+                    <h5>Deep Earth</h5>
+                </div>
+
+                <!-- item 4 -->
+                <div class="group item">
+                    <!-- image -->
+                    <img class="item-img"
+                        src="https://images.unsplash.com/photo-1612066463502-b9a10778c78d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+
+                    <!-- item gradient -->
+                    <div class="item-gradient"></div>
+
+                    <!-- item text -->
+                    <h5>Deep Earth</h5>
+                </div>
+            </div>
+
+            <!-- bottom button container -->
+            <div class="flex justify-center mt-10 md:hidden btn w-full md:hidden">See all</div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black">
+        <!-- container -->
+        <div class="container mx-w-6xl py-10 mx-auto">
+            <!-- footer flex container -->
+            <div class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
+                <!-- menu & logo container -->
+                <div class="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
+                    <!-- logo -->
+                    <div class="font-alata text-white font-extrabold text-3xl">loopstudios</div>
+
+                    <!-- menu container -->
+                    <div class="font-alata flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
+                        <!-- item 1 -->
+                        <div class="group">
+                            <a class="text-white group-hover:opacity-60 transition-opacity duration-200"
+                                href="">About</a>
+                        </div>
+
+                        <!-- item 2 -->
+                        <div class="group">
+                            <a class="text-white group-hover:opacity-60 transition-opacity duration-200"
+                                href="">Carees</a>
+                        </div>
+
+                        <!-- item 3 -->
+                        <div class="group">
+                            <a class="text-white group-hover:opacity-60 transition-opacity duration-200"
+                                href="">Events</a>
+                        </div>
+
+                        <!-- item 4 -->
+                        <div class="group">
+                            <a class="text-white group-hover:opacity-60 transition-opacity duration-200"
+                                href="">Products</a>
+                        </div>
+
+                        <!-- item 5 -->
+                        <div class="group">
+                            <a class="text-white group-hover:opacity-60 transition-opacity duration-200"
+                                href="">Support</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- social & copy container -->
+                <div class="flex flex-col items-start justify-between space-y-4 md:space-y-6 text-gray-500">
+                    <!-- icons container -->
+                    <div class="flex items-center justify-center space-x-4 md:justify-end mx-auto md:mx-0">
+                        <!-- icon 1 -->
+                        <div class="group text-white">
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.2343 2.25006H6.74328C6.1485 2.25001 5.55963 2.36752 5.01083 2.59577C4.46203 2.82402 3.96423 3.15847 3.54628 3.57972C3.12833 4.00096 2.79856 4.50062 2.5761 5.04972C2.35364 5.59881 2.24292 6.18641 2.25035 6.77843V17.2216C2.24292 17.8136 2.35364 18.4012 2.5761 18.9503C2.79856 19.4994 3.12833 19.9991 3.54628 20.4203C3.96423 20.8416 4.46203 21.176 5.01083 21.4043C5.55963 21.6325 6.1485 21.75 6.74328 21.75H11.5058V14.7841H9.68614C9.57294 14.7841 9.46437 14.7394 9.38433 14.6597C9.30428 14.58 9.25931 14.4719 9.25931 14.3593V12.123C9.25931 12.0074 9.30546 11.8965 9.38762 11.8147C9.46977 11.7329 9.58119 11.687 9.69737 11.687H11.5058V9.50663C11.4555 8.99188 11.5186 8.4724 11.6907 7.98442C11.8628 7.49644 12.1398 7.05171 12.5023 6.68124C12.8648 6.31078 13.3042 6.0235 13.7897 5.83945C14.2753 5.6554 14.7953 5.579 15.3135 5.61559H17.1669C17.2239 5.61557 17.2803 5.62692 17.3328 5.64896C17.3854 5.67101 17.4329 5.70331 17.4727 5.74396C17.5125 5.7846 17.5437 5.83277 17.5645 5.88562C17.5853 5.93847 17.5952 5.99492 17.5937 6.05165V7.94127C17.5937 8.05395 17.5487 8.16202 17.4687 8.24171C17.3886 8.32139 17.2801 8.36615 17.1669 8.36615H16.0436C14.8081 8.36615 14.5722 8.94757 14.5722 9.79734V11.6758H17.268C17.3291 11.6752 17.3896 11.6878 17.4454 11.7125C17.5012 11.7373 17.551 11.7737 17.5915 11.8193C17.632 11.8649 17.6621 11.9186 17.6799 11.9768C17.6978 12.0349 17.7028 12.0963 17.6948 12.1566L17.4252 14.3928C17.4141 14.4976 17.3642 14.5945 17.2854 14.6647C17.2065 14.735 17.1042 14.7735 16.9984 14.773H14.5834V21.7388H17.2567C17.8515 21.7389 18.4404 21.6214 18.9892 21.3931C19.538 21.1649 20.0358 20.8304 20.4537 20.4092C20.8717 19.9879 21.2014 19.4883 21.4239 18.9392C21.6464 18.3901 21.7571 17.8025 21.7496 17.2104V6.77843C21.7571 6.18452 21.6457 5.59508 21.4218 5.04451C21.198 4.49395 20.8662 3.99328 20.4458 3.57173C20.0255 3.15019 19.525 2.8162 18.9736 2.58928C18.4222 2.36236 17.8309 2.24704 17.2343 2.25006Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- icon 2 -->
+                        <div class="group text-white">
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.9808 4.00282C21.1248 4.41712 20.2347 4.75691 19.3204 5.01842C18.8534 4.522 18.273 4.14619 17.6289 3.92317C16.9848 3.70015 16.2963 3.63657 15.6223 3.73788C14.5105 3.94263 13.5234 4.57539 12.8732 5.50017C12.2229 6.42494 11.9615 7.56791 12.145 8.68341C12.1398 8.72003 12.1398 8.75719 12.145 8.79381C10.4767 8.72042 8.84272 8.29611 7.34954 7.54857C5.85636 6.80103 4.53758 5.74706 3.47924 4.45543C2.93957 5.37694 2.77271 6.46994 3.01284 7.51051C3.25297 8.55107 3.88192 9.46042 4.77082 10.0523C4.1054 10.0345 3.45408 9.85652 2.87209 9.53343V9.58862C2.87435 10.5491 3.20353 11.4801 3.80547 12.2285C4.40741 12.9769 5.24622 13.4981 6.18383 13.7062C5.82291 13.7967 5.452 13.8412 5.07992 13.8387C4.81338 13.845 4.54692 13.8228 4.2851 13.7725C4.55662 14.6039 5.07934 15.3307 5.78121 15.8527C6.48308 16.3746 7.32956 16.6661 8.20399 16.6868C6.71805 17.8447 4.88839 18.474 3.00456 18.4751C2.66885 18.479 2.33326 18.4606 2 18.4199C3.91279 19.6598 6.1453 20.3158 8.42478 20.3076C10.0031 20.3312 11.5702 20.0393 13.0341 19.4492C14.4981 18.8591 15.8296 17.9826 16.9503 16.8711C18.0711 15.7596 18.9586 14.4355 19.5608 12.9764C20.1631 11.5174 20.4679 9.95274 20.4574 8.37432C20.4574 8.18665 20.4574 8.01003 20.4574 7.8334C20.9951 7.36 21.4133 6.76628 21.6781 6.10062C21.9428 5.43496 22.0465 4.71617 21.9808 4.00282Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- icon 3 -->
+                        <div class="group text-white">
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.303 2.25H6.69698C5.51757 2.25 4.38647 2.71852 3.5525 3.55249C2.71853 4.38646 2.25 5.51757 2.25 6.69698V17.303C2.25 18.4824 2.71853 19.6135 3.5525 20.4475C4.38647 21.2815 5.51757 21.75 6.69698 21.75H17.303C18.4824 21.75 19.6136 21.2815 20.4475 20.4475C21.2815 19.6135 21.75 18.4824 21.75 17.303V6.69698C21.75 5.51757 21.2815 4.38646 20.4475 3.55249C19.6136 2.71852 18.4824 2.25 17.303 2.25ZM8.84265 17.9923C8.84568 18.0467 8.83757 18.1011 8.81882 18.1523C8.80007 18.2035 8.77106 18.2502 8.73359 18.2898C8.69612 18.3293 8.65097 18.3608 8.6009 18.3823C8.55084 18.4038 8.49691 18.4149 8.44243 18.4148H6.66363C6.55647 18.4119 6.45468 18.3673 6.37992 18.2904C6.30517 18.2136 6.26336 18.1106 6.2634 18.0034V10.5992C6.26191 10.5457 6.27118 10.4925 6.29063 10.4426C6.31007 10.3928 6.3393 10.3473 6.37662 10.309C6.41393 10.2706 6.45857 10.2402 6.50787 10.2193C6.55716 10.1985 6.61012 10.1878 6.66363 10.1879H8.44243C8.49593 10.1878 8.54889 10.1985 8.59819 10.2193C8.64749 10.2402 8.69212 10.2706 8.72944 10.309C8.76675 10.3473 8.796 10.3928 8.81544 10.4426C8.83489 10.4925 8.84414 10.5457 8.84265 10.5992V17.9923ZM7.51968 8.63141C7.22991 8.62922 6.94729 8.54129 6.70743 8.37871C6.46757 8.21613 6.2812 7.98618 6.17183 7.71784C6.06246 7.4495 6.03499 7.15479 6.09286 6.87086C6.15073 6.58693 6.29137 6.32649 6.49704 6.12236C6.70271 5.91824 6.9642 5.77957 7.24856 5.72385C7.53292 5.66812 7.82742 5.69782 8.09492 5.80921C8.36242 5.9206 8.59096 6.10869 8.75173 6.34978C8.91249 6.59086 8.99829 6.87414 8.9983 7.16391C8.9983 7.35757 8.95998 7.54931 8.88554 7.72808C8.8111 7.90685 8.702 8.06913 8.56455 8.20554C8.4271 8.34196 8.26401 8.44982 8.08467 8.52291C7.90534 8.59601 7.71332 8.63288 7.51968 8.63141ZM18.3369 17.9812C18.337 18.0825 18.2975 18.1798 18.2269 18.2525C18.1564 18.3251 18.0602 18.3674 17.959 18.3703H16.0801C15.9788 18.3674 15.8827 18.3251 15.8121 18.2525C15.7415 18.1798 15.7021 18.0825 15.7021 17.9812V14.557C15.7021 14.0456 15.8578 12.3335 14.3458 12.3335C13.1673 12.3335 12.9339 13.5342 12.8894 14.0678V18.059C12.8894 18.1603 12.85 18.2576 12.7794 18.3303C12.7088 18.403 12.6127 18.4452 12.5114 18.4481H10.6882C10.6371 18.4481 10.5865 18.4381 10.5392 18.4185C10.492 18.3989 10.4491 18.3703 10.413 18.3342C10.3769 18.298 10.3482 18.2551 10.3287 18.2079C10.3091 18.1607 10.299 18.1101 10.299 18.059V10.5658C10.3019 10.4646 10.3442 10.3685 10.4169 10.2979C10.4895 10.2273 10.5869 10.1878 10.6882 10.1879H12.5114C12.6127 10.1878 12.71 10.2273 12.7827 10.2979C12.8554 10.3685 12.8976 10.4646 12.9005 10.5658V11.2107C13.1667 10.8212 13.5341 10.5119 13.9632 10.316C14.3922 10.12 14.8666 10.045 15.3352 10.0989C18.3703 10.0989 18.3592 12.9339 18.3592 14.5459L18.3369 17.9812Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- icon 4 -->
+                        <div class="group text-white">
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.9995 11.9387C22.0094 10.3294 21.8724 8.72248 21.5902 7.13805C21.4655 6.71973 21.2335 6.34135 20.9172 6.04056C20.6009 5.73976 20.2113 5.52704 19.7872 5.42354C17.1956 5.12012 14.5871 4.98342 11.9779 5.01427C9.36839 4.9831 6.75966 5.12351 4.16858 5.4346C3.74842 5.55076 3.36553 5.77385 3.05729 6.08209C2.74905 6.39033 2.52597 6.7732 2.4098 7.19336C2.12724 8.77774 1.99025 10.3846 2.00054 11.994C1.99062 13.6033 2.1276 15.2102 2.4098 16.7946C2.52756 17.22 2.7535 17.6076 3.06559 17.9197C3.37769 18.2318 3.76531 18.4578 4.19069 18.5755C6.78235 18.8789 9.39084 19.0156 12 18.9848C14.6019 19.0192 17.2033 18.8824 19.7872 18.5755C20.2074 18.4593 20.5903 18.2363 20.8985 17.928C21.2067 17.6198 21.4298 17.2369 21.546 16.8168C21.8532 15.209 22.0051 13.5755 21.9995 11.9387ZM14.5887 12.5205L10.5842 14.7925C10.5034 14.8366 10.4126 14.859 10.3206 14.8574C10.2286 14.8558 10.1386 14.8303 10.0594 14.7835C9.98024 14.7366 9.91459 14.67 9.8689 14.5902C9.82322 14.5103 9.79906 14.4199 9.79881 14.3279V9.6158C9.79765 9.52345 9.8211 9.43245 9.86678 9.35217C9.91245 9.27189 9.97868 9.20523 10.0587 9.15904C10.1386 9.11285 10.2295 9.08881 10.3218 9.08938C10.4142 9.08995 10.5047 9.11511 10.5842 9.16229L14.7211 11.5405C14.8006 11.5876 14.8662 11.655 14.911 11.7359C14.9558 11.8167 14.9782 11.9081 14.9759 12.0005C14.9737 12.0929 14.9468 12.183 14.8981 12.2616C14.8495 12.3402 14.7807 12.4043 14.699 12.4475L14.5887 12.5205Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- icon 5 -->
+                        <div class="group text-white">
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.35449 11.107V9.50151C7.35449 9.40651 7.35449 9.36851 7.47799 9.36851C8.54141 9.36851 9.4047 9.30646 9.83399 9.55851C10.2633 9.81056 10.2818 10.1594 10.2893 10.2633C10.2967 10.3672 10.2926 10.5163 10.0926 10.8793C9.8926 11.2423 8.99786 11.2495 8.35199 11.2495H7.49699C7.39249 11.2495 7.35449 11.2115 7.35449 11.107Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M10.2995 12.7885C10.3985 12.9149 10.4692 13.0612 10.5068 13.2173C10.5444 13.3734 10.548 13.5358 10.5173 13.6935C10.4867 13.8511 10.4226 14.0003 10.3293 14.131C10.2359 14.2617 10.1156 14.3708 9.97649 14.451C9.77183 14.5368 9.55242 14.582 9.33049 14.584H7.48749C7.39249 14.584 7.35449 14.584 7.35449 14.4605V12.5605C7.35449 12.4655 7.35449 12.4275 7.47799 12.4275H8.70349C9.46379 12.4275 9.93849 12.361 10.2995 12.7885Z"
+                                        fill="currentColor" />
+                                    <path
+                                        d="M16.9885 11.9087C16.9376 11.7887 16.8604 11.6817 16.7625 11.5956C16.6646 11.5095 16.5486 11.4466 16.423 11.4115C16.1719 11.3429 15.9092 11.3284 15.6521 11.3687C15.3949 11.409 15.1493 11.5034 14.9313 11.6455C14.7137 11.8647 14.5734 12.1488 14.5315 12.4548C14.5315 12.562 14.5315 12.5815 14.6583 12.5815H17.0275C17.1445 12.5815 17.1445 12.5815 17.1348 12.4353C17.1237 12.2514 17.0738 12.072 16.9885 11.9087ZM16.9885 11.9087C16.9376 11.7887 16.8604 11.6817 16.7625 11.5956C16.6646 11.5095 16.5486 11.4466 16.423 11.4115C16.1719 11.3429 15.9092 11.3284 15.6521 11.3687C15.3949 11.409 15.1493 11.5034 14.9313 11.6455C14.7137 11.8647 14.5734 12.1488 14.5315 12.4548C14.5315 12.562 14.5315 12.5815 14.6583 12.5815H17.0275C17.1445 12.5815 17.1445 12.5815 17.1348 12.4353C17.1237 12.2514 17.0738 12.072 16.9885 11.9087ZM18.1 2.5H6.4C5.36566 2.5 4.37368 2.91089 3.64228 3.64228C2.91089 4.37368 2.5 5.36566 2.5 6.4V18.1C2.5 19.1343 2.91089 20.1263 3.64228 20.8577C4.37368 21.5891 5.36566 22 6.4 22H18.1C19.1343 22 20.1263 21.5891 20.8577 20.8577C21.5891 20.1263 22 19.1343 22 18.1V6.4C22 5.36566 21.5891 4.37368 20.8577 3.64228C20.1263 2.91089 19.1343 2.5 18.1 2.5ZM14.278 8.71075C14.278 8.63275 14.278 8.6035 14.3658 8.6035H17.5247V9.4225C17.5247 9.4225 17.5283 9.481 17.476 9.481C17.4237 9.481 14.4145 9.481 14.4145 9.481C14.278 9.481 14.278 9.481 14.278 9.3445V8.71075ZM11.353 15.877C10.1537 16.5303 8.1355 16.267 5.74675 16.267V8.18425H9.559C10.534 8.18425 11.6943 8.428 12.0063 9.4615C12.1681 9.91258 12.1581 10.4075 11.9782 10.8517C11.7984 11.2959 11.4613 11.6583 11.0312 11.8698C11.4278 12.0165 11.774 12.2739 12.0289 12.6112C12.2837 12.9486 12.4366 13.352 12.4695 13.7735C12.5023 14.1951 12.4137 14.6173 12.2141 14.99C12.0145 15.3628 11.7123 15.6706 11.3433 15.877H11.353ZM18.6168 13.576H14.7168C14.6095 13.576 14.512 13.6345 14.5315 13.771C14.6485 14.3463 14.9118 14.9508 15.5065 15.0385C15.8213 15.1319 16.1583 15.1174 16.464 14.9973C16.7696 14.8772 17.0263 14.6583 17.1932 14.3755C17.1932 14.3755 17.242 14.317 17.2712 14.317H18.5388C18.5388 14.317 18.6168 14.317 18.5972 14.3853C18.4644 14.7644 18.2665 15.1174 18.0122 15.4285C17.6731 15.7519 17.2641 15.9929 16.8169 16.1327C16.3697 16.2726 15.8962 16.3075 15.4333 16.2349C14.9704 16.1623 14.5304 15.9841 14.1474 15.7141C13.7645 15.444 13.4488 15.0894 13.225 14.6777C13.0866 14.4036 13.0006 14.106 12.9715 13.8003C12.7972 13.0317 12.9301 12.2254 13.3417 11.5533C13.7533 10.8813 14.4112 10.3965 15.175 10.2025C17.3883 9.72475 18.7922 11.2458 18.7922 13.3907C18.7954 13.4158 18.7928 13.4413 18.7846 13.4652C18.7764 13.4892 18.7629 13.5109 18.745 13.5288C18.7271 13.5466 18.7054 13.5602 18.6815 13.5684C18.6576 13.5766 18.6321 13.5792 18.607 13.576H18.6168ZM16.4328 11.4115C16.1817 11.3429 15.9189 11.3284 15.6618 11.3687C15.4047 11.409 15.175 11.4578 14.941 11.6455C14.707 11.8332 14.5832 12.1488 14.5413 12.4548C14.5413 12.562 14.5413 12.5815 14.668 12.5815H17.0275C17.1445 12.5815 17.1445 12.5815 17.1348 12.4353C17.1237 12.2514 17.0738 12.072 16.9885 11.9087C16.9376 11.7887 16.8604 11.6817 16.7625 11.5956C16.6646 11.5095 16.5486 11.4466 16.423 11.4115H16.4328Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- copy -->
+                    <div class="font-bold mx-auto md:mx-0">&copy; 2025 Loopstudios. All Rights Reserved</div>
+                </div>
+    </footer>
+
+    <!-- go to top button -->
+    <div id="go-top"
+        class="fixed w-16 h-16 bottom-8 right-8 bg-black rounded-full shadow-xl shadow-gray-400/40 text-lg font-bold text-white flex justify-center items-center cursor-pointer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M20 15.5831L13.4134 8.9964C13.0367 8.62509 12.529 8.41693 12 8.41693C11.471 8.41693 10.9633 8.62509 10.5866 8.9964L4 15.5831"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById('ham-btn');
+        const menu = document.getElementById('menu');
+        const goTop = document.getElementById('go-top');
+
+        hamburger.addEventListener('click', navToggle);
+
+        function navToggle() {
+            hamburger.classList.toggle('open');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            document.body.classList.toggle('overflow-hidden');
+        }
+
+        goTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                goTop.classList.add('block');
+                goTop.classList.remove('hidden');
+            } else {
+                goTop.classList.remove('block');
+                goTop.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+
+</html>

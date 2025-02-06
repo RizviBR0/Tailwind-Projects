@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h5 {
+    @apply absolute px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#hero {
+  background-image: url("https://plus.unsplash.com/premium_photo-1709947435014-a1d07fe1a7f0?q=80&w=1006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-container {
+  @apply flex-col justify-between w-full space-y-6 text-2xl text-white uppercase md:flex-row md:space-y-0 md:space-x-8;
+}
+
+.item {
+  @apply relative overflow-hidden md:w-1/4;
+}
+
+.item-img {
+  @apply w-full duration-200 group-hover:scale-110;
+}
+
+.item-gradient {
+  @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-30;
+}
+
+@media (max-width: 576px) {
+  /* code goes here */
+}
+
+@layer components {
+  .btn {
+    @apply px-10 py-2 my-0 font-bold tracking-widest uppercase border-2 border-black font-alata hover:bg-black hover:text-white duration-200;
+  }
+}
+
+/* hamburger menu */
+.ham {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.ham-t,
+.ham-md,
+.ham-b {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0deg);
+}
+
+.ham-md {
+  transform: translateY(7px);
+}
+
+.ham-b {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .ham-t {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .ham-md {
+  display: none;
+}
+
+.open .ham-b {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
