@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.ficon:hover {
+  filter: invert(80%) sepia(37%) saturate(4048%) hue-rotate(132deg)
+    brightness(105%) contrast(104%);
+}
